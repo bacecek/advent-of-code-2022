@@ -9,8 +9,8 @@ data class Command(
     val to: Int,
 )
 
-fun main(args: Array<String>) {
-    val inputRaw = {}::javaClass.get().classLoader.getResource("day05_input")!!.readText()
+fun main() {
+    val inputRaw = loadInput("day05_input")
 
     println("""
         part1 = ${part1(parseInput(inputRaw))}

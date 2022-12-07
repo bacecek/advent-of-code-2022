@@ -1,5 +1,5 @@
 fun main() {
-    val inputRaw = {}::javaClass.get().classLoader.getResource("day06_input")!!.readText()
+    val inputRaw = loadInput("day06_input")
 
     println("""
         part1=${getMarker(inputRaw, 4)}
